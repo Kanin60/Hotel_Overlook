@@ -1,0 +1,11 @@
+@import url('../../globalStyling.scss');
+
+.newsCard{
+    height: 50vh; 
+    box-shadow: 3px 6px 8px 0px var(--shadow);
+    background-color: var(--white);
+    overflow: hidden;
+    h2, p{
+        font-family: var(--font);
+    }
+}

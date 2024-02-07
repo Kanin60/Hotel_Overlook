@@ -1,0 +1,14 @@
+@import url(../../globalStyling.scss);
+
+.breadcrumb {
+    padding: 10px;
+    font-family: var(--font);
+}
+
+.breadcrumb span {
+    font-weight: 300;
+}
+
+.separator {
+    margin: 0 5px;
+}

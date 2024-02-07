@@ -1,5 +1,27 @@
+@import url('../../globalStyling.scss');
+
 .footer{
-    height: 200px;
+    padding: 2rem 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 35% 15% 1fr;
+    background-color: var(--white);
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            .icon{
+                font-size: 20px;
+            }
+            a{
+                margin-right: 1rem;
+                color: var(--black);
+                font-family: var(--font);
+                text-decoration: none;
+            }
+            a:hover{
+                color: var(--callToAction);
+            }
+        }
+    }
+
 }

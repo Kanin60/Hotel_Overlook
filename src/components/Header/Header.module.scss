@@ -1,9 +1,12 @@
+@import url('../../globalStyling.scss');
 .header{
     max-width: 1000px;
-    img{
-        width: 100%
-    };
-    h2{
-        text-align: center;
+    figure{
+        height: 40vh;
+        width: 100vw;
+        overflow: hidden;
+        img{
+            width: 100%
+        }
     }
 }

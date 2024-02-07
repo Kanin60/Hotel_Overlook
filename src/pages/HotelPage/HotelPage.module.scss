@@ -1,0 +1,26 @@
+@import url('../../globalStyling.scss');
+
+.hotelPage{
+    // border: 1px solid plum;
+    @import url('../../globalStyling.scss');
+
+.navcountries{
+    // border: 1px solid darkmagenta;
+    ul{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        margin: auto;
+        padding: 1rem 0;
+
+        background: linear-gradient(to right, transparent 0%, var(--white) 50%, transparent 100%);
+        box-shadow: 3px 6px 8px 0px var(--shadow);
+        li{
+            list-style: none;
+            margin-right: 1rem;
+            font-family: var(--font);
+            cursor: pointer;
+        }
+    }
+}
+}

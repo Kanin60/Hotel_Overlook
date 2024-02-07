@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 :root{
-    --primary-color: #000000;
-    --secondary-color: #000000;
-    --callToAction: #000000;
+    //COLORS
+    --black: #000;
+    --gray: #707070;
+    --white: #fff;
+    --BG: #EBEBEB ;
+    --callToAction: #FF0000;
+    --titleBG: rgba(0, 0, 0, 0.7);
+    --shadow: rgba(0, 0, 0, 0.2);
+    --titleLine:  rgba(255, 0, 0, 0.5);
+
+    //FONTS
+    --font: 'Open Sans', sans-serif;
 }

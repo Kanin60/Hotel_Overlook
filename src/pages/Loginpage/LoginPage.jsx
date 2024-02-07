@@ -1,9 +1,10 @@
+import { Title } from "../../components/Title/Title";
 
 export function LoginPage() {
 
     return (
         <>
-            <h1>Login siden</h1>
+            <Title title="Login" />
             <p>Log ind med brugernavn og password</p>
         </>
     )
