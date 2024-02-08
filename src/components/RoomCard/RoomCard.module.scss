@@ -1,6 +1,6 @@
 @import url('../../globalStyling.scss');
 
-.newsCard{
+.roomcardWrapper{
     height: 50vh; 
     max-width: 90vw;
     margin: auto;
@@ -10,7 +10,8 @@
     img{
         width: 100%;
     }
-    h2, p{
+    h3, a, p{
         font-family: var(--font);
+        text-decoration: none;
     }
 }

@@ -1,0 +1,10 @@
+@import url('../../globalStyling.scss');
+
+.citiesWrapper{
+    img{
+        width: 100%;
+    }
+    li{
+        font-family: var(--font);
+    }
+}

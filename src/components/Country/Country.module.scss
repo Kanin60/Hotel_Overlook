@@ -1,5 +1,32 @@
 @import url('../../globalStyling.scss');
 
 .countryWrapper{
-    border: 3px solid slateblue;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 2rem;
+    h2{
+        font-family: var(--font);
+    }
+    figure{
+        img{
+            width: 100%;
+        }
+        figcaption{
+            font-family: var(--font);
+        }
+    }
+    ul{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        h4{
+            font-family: var(--font);
+            margin-bottom: 1rem;
+        }
+        li{
+            margin-left: 1rem;
+            margin-bottom: 7px;
+            list-style: none;
+        }
+    }
 }

@@ -1,8 +1,15 @@
 @import url('../../globalStyling.scss');
 
 .forside{
-    border: 1px solid greenyellow;
+    max-width: 1000px;
+    margin: auto;
     .newsWrapper{
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .roomsWrapper{
         margin: 2rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
