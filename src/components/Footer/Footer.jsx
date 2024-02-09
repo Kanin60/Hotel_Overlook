@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
 
+    //retunere footer med info
     return (
         <footer className={style.footer}>
             <ul>

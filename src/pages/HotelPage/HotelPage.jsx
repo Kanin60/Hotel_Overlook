@@ -10,40 +10,23 @@ export function HotelPage() {
     // lande
     const destinationsList = useFetch('http://localhost:4000/destinations');
     const destinationsArray = destinationsList?.data
-    // byer
-    // const oneCountryData = useFetch(`http://localhost:4000/destinations/?${destinationsSlug}`)
-    // const oneCountry = oneCountryData?.data
 
-    const [breadcrumbItems, setBreadcrumbItems] = useState(['']);
     const [destinationsSlug, setDestinationsSlug] = useState('')
     const [citySlug, setCitySlug] = useState(null)
 
-    const [hotelSlug, setHotelSlug] = useState(null)
-    const [roomSlug, setRoomSlug] = useState(null)
-    //Valg af land, 'Valg af by', 'Valg af hotel', 'Valg af værelse', 'Reserver værelse'
-
-
+    //sætter slug som sendes med component
     function handelDestinationsSlug(slug) {
         setDestinationsSlug(slug)
     }
     // console.log('slug', destinationsSlug);
 
+    //sætter slug som sendes med component
     function handelCitySlug(slug) {
         setCitySlug(slug)
-
     }
     console.log('slug', citySlug);
 
-    // function handelHotelSlug(slug) {
-    //     setHotelSlug(slug)
-    // }
-    // console.log('slug', hotelSlug);
-
-    // function handelRoomSlug(slug) {
-    //     setRoomSlug(slug)
-    // }
-    // console.log('slug', roomSlug);
-
+    // retunere navitation med alle lande og componenter med enten alle lande eller et land - lavet med en ternary operator
     return (
         <section className={style.hotelPage}>
             <Title title="Hoteller & Destinationer" />

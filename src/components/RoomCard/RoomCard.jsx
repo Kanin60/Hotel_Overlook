@@ -1,8 +1,7 @@
 import style from './RoomCard.module.scss'
 
+//bruger props til at lave et card
 export const RoomCard = ({ imageSrc, title, priceLow, priceHigh }) => {
-
-    // console.log('ROOMCARD', imageSrc);
 
     return (
         <figure className={style.roomcardWrapper}>

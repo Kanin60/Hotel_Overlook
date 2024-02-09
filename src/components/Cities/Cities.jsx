@@ -8,18 +8,18 @@ export const Cities = ({ itemSlug, citySlug }) => {
     const cities = citiesData?.data?.cities[0]
     const [hotelSlug, setHotelSlug] = useState('')
 
-
+    //Sætter hotelSlug som skal sendes med til Hotels component - blev ikke færdig
     function handelHotelSlug(slug) {
         setHotelSlug(slug)
     }
-    console.log('data', cities);
+    // console.log('data', cities);
     console.log('hotelSlug', hotelSlug);
 
+    // returner info om by og liste med hoteller, som man kan trykke på og få hotel-slug
     return (
         <>
             {cities &&
                 <section className={style.citiesWrapper}>
-                    <p>CITIES</p>
                     <h2>{cities?.name}</h2>
                     <figure>
                         <img src={`http://localhost:4000/images/${cities?.CityImage?.city_image_filename}`} alt={cities?.CityImage?.city_image_title} />
@@ -33,10 +33,8 @@ export const Cities = ({ itemSlug, citySlug }) => {
                             )
                         })}
                     </ul>
-
                 </section>
             }
-
         </>
     )
 }

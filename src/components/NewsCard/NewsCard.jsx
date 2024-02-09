@@ -2,7 +2,8 @@ import style from './NewsCard.module.scss'
 import { Link } from 'react-router-dom'
 
 export const NewsCard = ({ imageSrc, title, teaser }) => {
-    console.log(imageSrc);
+    // console.log(imageSrc);
+    //bruger props til at lave et card
     return (
         <div className={style.newsCard}>
             <img src={imageSrc} alt={title} />

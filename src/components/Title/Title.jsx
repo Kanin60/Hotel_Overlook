@@ -1,5 +1,6 @@
 import style from './Title.module.scss'
 
+//bruger props til at lave titlen. 
 export const Title = ({ title }) => {
 
     return (

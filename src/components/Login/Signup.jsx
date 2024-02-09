@@ -4,9 +4,11 @@ import { UserContext } from "../../context/UserContext";
 
 export const Signup = () => {
 
-    const { setUserData, userData } = useContext(UserContext);
+    // const { setUserData, userData } = useContext(UserContext);
     const [signupData, setSignupData] = useState()
 
+
+    //Her fetcher jeg med metoden POST til signup(users)
     function handleSignup(e) {
         e.preventDefault()
 
@@ -31,8 +33,9 @@ export const Signup = () => {
             .then((data) => setSignupData(data))
             .catch((err) => console.log(err));
     }
-    console.log('USERDATA FRA SIGN UP:', signupData);
+    // console.log('USERDATA FRA SIGN UP:', signupData);
 
+    //retunere en sigup form
     return (
         <>
             <h1>Sign Up Page</h1>

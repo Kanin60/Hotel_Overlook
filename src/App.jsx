@@ -9,6 +9,7 @@ import { RoomPage } from "./pages/RoomPage/Roompage";
 import { ReservationPage } from "./pages/ReservationPage/ReservationPage";
 function App() {
 
+    //Retunere alle ruterne i projektet
     return (
         <>
             <BrowserRouter>

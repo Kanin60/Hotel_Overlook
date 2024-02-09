@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+
+// fetcher med GET. 
 export const useFetch = (url) => {
     const [data, setData] = useState();
     const [error, setError] = useState();

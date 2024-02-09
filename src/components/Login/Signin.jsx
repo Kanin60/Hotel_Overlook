@@ -1,20 +1,20 @@
-import { useContext } from "react";
 import style from './Login.module.scss'
 import { UserContext } from "../../context/UserContext";
+import { useContext } from "react";
 
 export const Signin = () => {
-
+    //state fra context som bliver opdateret
     const { setUserData, userData } = useContext(UserContext);
 
+    //Her fetcher jeg med metoden POST til login
     function handleLogin(e) {
         e.preventDefault()
 
-        console.log(e.target.email.value);
-        let url = "http://localhost:8081/sign-in"
+        let url = "http://localhost:4000/login"
 
         /* Body er inholdet af det vi sender til serveren/ request's body som sendes til serveren */
         let body = new URLSearchParams()
-        body.append('email', e.target.email.value)
+        body.append('username', e.target.username.value)
         body.append('password', e.target.password.value)
 
         let options = {
@@ -24,21 +24,18 @@ export const Signin = () => {
 
         fetch(url, options)
             .then((res) => res.json())
-            .then((data) => setUserDate(data))
+            .then((data) => setUserData(data))
             .catch((err) => console.error(err))
     }
 
-    console.log('User: ', userData);
+    // console.log('User: ', userData);
 
+    //Retunere login
     return (
         <>
-            <h1>Login Page</h1>
-            <b>{userData && !userData.accessToken ? userData : ''}</b>
-            <h2>{userData && userData.accessToken ? 'Welcome ' + userData.name : ''}</h2>
-
             <form onSubmit={(e) => handleLogin(e)}>
                 <label>
-                    <input type="email" name="email" placeholder="Write your email here" />
+                    <input type="email" name="username" placeholder="Write your email here" />
                 </label>
                 <label>
                     <input type="password" name="password" placeholder="********" />

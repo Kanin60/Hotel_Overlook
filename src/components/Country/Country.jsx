@@ -10,6 +10,7 @@ export const Country = ({ itemSlug }) => {
     const oneCountry = oneCountryData?.data
     const [citySlug, setCitySlug] = useState('')
 
+    //sætter citySlug, så det kan sendes med component
     function handelCitySlug(slug) {
         setCitySlug(slug)
         return (citySlug)
@@ -17,6 +18,7 @@ export const Country = ({ itemSlug }) => {
     // console.log('ET LAND: ', oneCountry);
     console.log('city slug', citySlug);
 
+    // returner info om land og liste med byer, som man kan trykke på og få city-slug
     return (
         <section className={style.countryWrapper}>
             <Breadcrumb items={breadcrumbItems} />

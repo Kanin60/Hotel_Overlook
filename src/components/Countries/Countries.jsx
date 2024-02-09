@@ -7,9 +7,9 @@ export const Countries = () => {
     const breadcrumbItems = ['Valg af land',];//, 'Valg af by', 'Valg af hotel', 'Valg af værelse', 'Reserver værelse'
     const contriesList = useFetch('http://localhost:4000/destinations')
     const contries = contriesList.data
-
     // console.log('data', contries);
 
+    // returner info om lande 
     return (
         <section className={style.contryWrapper}>
             <Breadcrumb items={breadcrumbItems} />

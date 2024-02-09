@@ -5,12 +5,14 @@ import { NavLink } from 'react-router-dom';
 
 export const Nav = () => {
 
+    //styling ved active link
     const activeStyle = ({ isActive, isPending }) => {
         return {
             color: isActive ? '#FF0000' : '',
         }
     }
 
+    //retunere navigationsbar
     return (
         <nav className={style.nav}>
             <img src={Logo} alt="" />

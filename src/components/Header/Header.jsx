@@ -11,7 +11,7 @@ export const Header = () => {
     //indexet som "styrer" rækkefølgen i imgArray
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    //
+    // incrementer index hvert 3 sekund 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % 76);
@@ -19,9 +19,9 @@ export const Header = () => {
 
         return () => clearInterval(intervalId);
     }, [currentIndex]);
-
     // console.log('Tæller:', currentIndex);
 
+    // returnerer slideshow
     return (
         <header className={style.header}>
 
